@@ -2,4 +2,4 @@ From The Odin Project's [curriculum](https://www.theodinproject.com/courses/web-
 
 An Etch-A-Sketch browser application built in HTML, CSS and vanilla JavaScript.
 
-[View in Browser](https://luizgrether.github.io/Etch-A-Sketch/)
+[View in Browser](https://luizgrether.github.io/etch-a-sketch/)

@@ -1,0 +1,147 @@
+:root {
+  --boardSize: 16;
+  --divSize:
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.grid-container {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -250px;
+  background-color: #f2f2f2;
+  border: solid 1px black;
+  grid-template-columns: repeat(var(--boardSize), var(--divSize));
+  grid-template-rows: repeat(var(--boardSize), var(--divSize));
+}
+
+.grid-item {
+  background-color: #f2f2f2;
+  border-bottom: solid 1px #c2c2c2;
+  border-right: solid 1px #c2c2c2;
+}
+
+.buttons {
+  display: flex;
+  position: absolute;
+  width: 502px;
+  left: 50%;
+  top: 50%;
+  margin-left: -252px;
+  margin-top: -286px;
+  border: solid 2px white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons p {
+  font-family: 'DM Mono', monospace;
+  font-size: 13.3px;
+}
+
+.board-size {
+  display: flex;
+  align-items: center;
+}
+
+.board-size button:nth-child(1),
+.board-size button:nth-child(3) {
+  width: 27px;
+}
+
+.menu-buttons {
+  display: flex;
+}
+
+.menu-buttons button {
+  margin-left: 10px;
+  font-family: 'DM Mono', monospace;
+}
+
+.buttons button {
+  border: 1px solid black;
+  padding: 5px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  align-content: center;
+}
+
+.buttons button:hover {
+  background: black;
+  color: white;
+}
+
+.buttons p {
+  margin: 0px 5px;
+}
+
+.rainbow-on {
+  background-color: blue !important;
+  color: white;
+  animation: 15000ms ease-in-out infinite color-change;
+}
+
+.eraser-on {
+  background-color: #d2d2d2 !important;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #ff2400;
+  }
+  12.5% {
+    background-color: #e81d1d;
+  }
+  25% {
+    background-color: #e8b71d;
+  }
+  37.5% {
+    background-color: #e3e81d;
+  }
+  50% {
+    background-color: #1de840;
+  }
+  62.5% {
+    background-color: #1ddde8;
+  }
+  75% {
+    background-color: #2b1de8;
+  }
+  87.5% {
+    background-color: #dd00f3;
+  }
+  100% {
+    background-color: #ff0000;
+  }
+}
+
+.social {
+  position: absolute;
+  width: 500px;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: 270px;
+  display: flex;
+  justify-content: center;
+}
+
+.social i {
+  margin: 0px 10px;
+  opacity: 50%;
+  color: black;
+}
+
+.social i:hover {
+  opacity: 100%;
+  cursor: pointer;
+}

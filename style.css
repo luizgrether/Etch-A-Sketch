@@ -1,5 +1,5 @@
 :root {
-  --boardSize: 16;
+  --boardSize: 24;
   --divSize:
 }
 
@@ -96,31 +96,25 @@ body {
 
 @keyframes color-change {
   0% {
-    background-color: #ff2400;
+    background-color: #9400D3;
   }
-  12.5% {
-    background-color: #e81d1d;
+  14.2% {
+    background-color: #4B0082;
   }
-  25% {
-    background-color: #e8b71d;
+  28.4% {
+    background-color: #0000FF;
   }
-  37.5% {
-    background-color: #e3e81d;
+  42.6% {
+    background-color: #00FF00;
   }
-  50% {
-    background-color: #1de840;
+  57% {
+    background-color: #FFFF00;
   }
-  62.5% {
-    background-color: #1ddde8;
+  71.4% {
+    background-color: #FF7F00;
   }
-  75% {
-    background-color: #2b1de8;
-  }
-  87.5% {
-    background-color: #dd00f3;
-  }
-  100% {
-    background-color: #ff0000;
+  85.8% {
+    background-color: #FF0000;
   }
 }
 

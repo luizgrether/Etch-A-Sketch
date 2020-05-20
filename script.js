@@ -1,4 +1,4 @@
-let boardSize = 16;
+let boardSize = 32;
 const board = document.querySelector(".grid-container");
 let rainbowMode = false;
 let eraserMode = false;
@@ -61,11 +61,8 @@ function clearBoard() {
 }
 
 function getRandomColor() {
-  const letters = "0123456789ABCDEF";
-  let color = "#";
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
+  const colors = ["#9400D3", "#4B0082", "#0000FF", "#00FF00", "#FFFF00", "#FF7F00", "#FF0000"];
+  let color = colors[Math.floor(Math.random() * colors.length)];
   return color;
 }
 
@@ -73,7 +70,7 @@ const smaller = document.querySelector(".smaller");
 smaller.addEventListener("click", function () {
   if (boardSize > 2){
     resetBoard();
-    boardSize--;
+    boardSize -= 2;
     displayBoard(boardSize, rainbowMode);
   }
 });
@@ -82,7 +79,7 @@ const bigger = document.querySelector(".bigger");
 bigger.addEventListener("click", function () {
   if (boardSize < 150){
     resetBoard();
-    boardSize++;
+    boardSize += 2;
     displayBoard(boardSize, rainbowMode);
   }
 });
